@@ -1,0 +1,113 @@
+body {
+            font-family: 'Hahmlet', serif;
+            text-align: center;
+        }
+.wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;   
+    gap: 20px;         
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.description {
+            text-align: left;
+            font-size: 20px;
+            width: 300px;
+        }
+/*1번 음료수 설명*/
+.description-blue {
+            display: none;
+        }
+.choice-blue:hover + .description-blue {
+  display: block;
+}
+
+/*2번 음료수 설명*/
+.description-red {
+            display: none;
+        }
+.choice-red:hover + .description-red {
+  display: block;
+}
+
+/*3번 음료수 설명*/
+.description-orange {
+            display: none;
+        }
+.choice-orange:hover + .description-orange {
+  display: block;
+}
+
+/*4번 음료수 설명*/
+.description-purple {
+            display: none;
+        }
+.choice-purple:hover + .description-purple {
+  display: block;
+}
+
+/*5번 음료수 설명*/
+.description-pink {
+            display: none;
+        }
+.choice-pink:hover + .description-pink {
+  display: block;
+}
+
+/*6번 음료수 설명*/
+.description-green {
+            display: none;
+        }
+.choice-green:hover + .description-green {
+  display: block;
+}
+
+
+
+
+.vending-machine {
+            width: 300px;
+            height: 500px;
+            animation: blink 4s infinite;
+            /*background-color: #863434;*/
+            padding: 30px;
+        }
+
+@keyframes blink {
+            0% { background-color: #863434; }
+            33% { background-color: #d26969; }
+            66% { background-color: #a3c35e; }
+            100% { background-color: #863434; }
+        }
+.showcase {
+            background-color: rgb(206, 206, 233);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+.drink {
+    padding: 10px;
+    text-align: center;
+}
+
+.red svg {
+    fill: rgb(218, 99, 99);
+}
+.blue svg {
+    fill: rgb(109, 109, 215);
+}
+.orange svg {
+    fill: rgb(222, 175, 114);
+}
+.purple svg {
+    fill: rgb(180, 133, 217);
+}
+.pink svg {
+    fill: rgb(255, 192, 203);
+}
+.green svg {
+    fill: rgb(125, 179, 125);
+}
